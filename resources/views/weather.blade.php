@@ -8,7 +8,9 @@ height:50px;
 background-color:lightblue;
 
 }
-
+body{
+	 background-image: url("https://cdn2.vectorstock.com/i/1000x1000/64/01/good-weather-background-blue-sky-with-clouds-vector-1156401.jpg");
+}
 
 </style>
 </head>
@@ -17,13 +19,16 @@ background-color:lightblue;
 
 
 	<center><br><br>
-		<form method="post" action="/hi">
+			<form method="post" action="/hi">
+			
 			<div class="Weather">
-		<h1 >{{$data}}</h1>
-		</div>
-			<input type="text" name="name" required>
+		<h1 >Temp:{{$data}}</h1>
 
-			<input type="submit" name="submit" value="add">
+		</div>
+		<div class="Weather">
+		<h1 >humidity:{{$data2}}</h1>
+		</div>
+			
 		</form>
 	</center>
 </body>

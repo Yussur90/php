@@ -18,6 +18,6 @@ class weather extends Controller
     
 
     
-     return view('weather',array('data'=>$data -> main -> temp));
+    return view('weather',array('data'=>$data -> main -> temp,'data2'=>$data -> main -> humidity));
  }
 }

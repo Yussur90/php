@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/yussur', 'yussurctrl@yussur');
 
-Route::get('/weather', 'weather@weather');
+Route::get('/', 'weather@weather');
 
 
 Route::post('/hi', 'weather@weather');
